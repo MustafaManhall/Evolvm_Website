@@ -1,0 +1,141 @@
+/* Contact us styles */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    height: fit-content;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  
+  .contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "firstName lastName"
+      "email phoneNumber"
+      "message message"
+      "checkbox checkbox"
+      "submit submit";
+    gap: 15px;
+  }
+  
+  label {
+    width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  .full-width {
+    grid-column: 1 / span 2; /* Make textarea span the entire form width */
+  }
+  textarea {
+    resize: none;
+  }
+  
+  .form-inline {
+    grid-column: 1 / span 2; 
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    justify-content: flex-start; 
+    font-size: 12px;
+  }
+  
+  .submit-button {
+    grid-area: submit;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "firstName"
+        "lastName"
+        "email"
+        "phoneNumber"
+        "message"
+        "checkbox"
+        "submit";
+    }
+  }
+  @media screen and (max-width:400px) {
+    .header {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+    label {
+      margin-right: 8px;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+    input,textarea {
+    padding: 10px;
+    font-size: 10px;
+    }
+  .form-inline {
+   font-size: 10px;
+  }
+  .submit-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .contact-info {
+    font-size: 14px;
+  }
+  }

@@ -1,0 +1,122 @@
+.footer {
+    background-color: #EDEDED; 
+    padding: 20px;
+    display: flex;
+    margin-top: auto; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px; 
+    border: 1px solid #dadada;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    margin-right: 10px; 
+    border-radius: 12px;
+  }
+  
+  .footer-logo p {
+    font-size: 20px;
+    color: grey;
+    margin: 0;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+  }
+  
+  .footer-social a {
+    margin-left: 10px; 
+  }
+  
+  .footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-social img:hover {
+    transform: scale(1.1); 
+  }
+
+  @media screen and (max-width: 769px){
+    
+    .footer {
+      padding: 10px;
+      border-radius: 12px;
+    }
+    
+    .footer-logo p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+  }
+  @media screen and (max-width: 500px){
+    .footer-copyright {
+      font-size: 12px;
+    }
+    .footer-logo p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 450px){
+    .footer {
+      padding: 8px;
+    }
+    .footer-logo p {
+      font-size: 12px;
+      margin: 0;
+    }
+    .footer-copyright {
+      font-size: 12px;
+    }
+    .footer-logo img {
+      margin-right: 8px; 
+      border-radius: 10px;
+    }
+    
+  }
+  @media screen and (max-width: 410px){
+    .footer-social img {
+      width: 20px;
+      height: 20px;
+    }
+    .footer-logo p {
+      font-size: 10px;
+      margin: 0;
+    }
+    .footer-copyright {
+      font-size: 10px;
+    }
+    
+  }
+  @media screen and (max-width: 340px){
+    .footer-social img {
+      width: 15px;
+      height: 15px;
+    }
+    .footer-logo p {
+      font-size: 8px;
+      margin: 0;
+    }
+    .footer-copyright {
+      font-size: 8px;
+    }
+    
+  }
