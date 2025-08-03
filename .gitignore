@@ -14,7 +14,7 @@ client/build/
 npm-debug.log*
 
 # Ignore Mac system files
-.DS_Store
+*.DS_Store
 Thumbs.db
 
 # Ignore VS Code settings
